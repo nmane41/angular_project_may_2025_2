@@ -16,7 +16,10 @@ export class CounterComponent {
   count$: any;
 
   constructor(private store: Store) {
-    this.count$ = this.store.select((state: any) => state.counterReducer);
+    this.count$ = this.store.select((state: any) => {
+      console.log(state);
+      return state.counterReducer;
+    });
   }
 
   incrementCount() {
