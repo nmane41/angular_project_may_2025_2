@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MaterialDemo1Component } from './components/material-demo1/material-demo1.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TodoCrudComponent } from './components/todo-crud/todo-crud.component';
+import { EmployeeCrudComponent } from './components/employee-crud/employee-crud.component';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { TodoCrudComponent } from './components/todo-crud/todo-crud.component';
     // MaterialDemo1Component,
     // CounterComponent
     TodoCrudComponent
+    // EmployeeCrudComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
